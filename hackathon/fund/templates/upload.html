@@ -1,0 +1,19 @@
+<!-- <form method="post" class="mb-2" action="">
+    {% csrf_token %}
+   <div class="field">
+      <input type="file" name="file" id="file" required>
+      <label>UserName</label>
+    </div>
+    <div class="field">
+        <input type="submit" value="Register">
+     </div>
+</form> -->
+<<!-- form method="post" enctype="multipart/form-data" action="{% url 'upload_to_google_drive' %}">
+  {% csrf_token %}
+  <input type="file" name="file">
+  <button type="submit">Upload</button>
+</form> -->
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">

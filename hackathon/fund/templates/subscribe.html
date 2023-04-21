@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+  <link href="{% static 'subscribe1.css' %}" rel="stylesheet"/>
+  <style></style>
+</head>
+<body>
+  
+<div id="wrapper" >
+  <div id="container">
+    
+    <div class="information-column">
+      <div class="content">
+        <p>ANOVA</p>
+        
+
+        <h1>Choose a subscribtion</h1>
+        
+      </div>
+    </div>
+    
+    <div class="form-column">
+      
+      <div class="subscribtion free"><a href="#" style="text-decoration: none;">
+          <h2>3-month</h2>
+          <p>Get 3 months of subscription</p></a>
+      </div>
+
+      <div class="subscribtion family"><a href="#" style="text-decoration: none;">
+          <h2>6-month</h2>
+          <p>Get 6 months of subscription</p></a>
+      </div>
+
+      <div class="subscribtion premium"><a href="#" style="text-decoration: none;">
+          <h2>1-year</h2>
+          <p>Get 1 year of subscription</p>
+        </a>
+      </div>
+      
+     <form class="form">
+        
+        <label>Email</label>
+        <input type="email" placeholder="Your email here">
+        
+        <label>Password</label>
+        <input type="password" placeholder="Your password here">
+       
+       <div class="free-button btn">Start litsening</div>
+       
+        <label class="payment free-form">Payment</label>
+        <div class="klarna payment-btn btn free-form"><img src="https://cdn.klarna.com/1.0/shared/image/generic/logo/de_de/basic/logo_white.png"/></div>
+        <div class="paypal payment-btn btn free-form"><img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg"/></div>
+       <div class="card payment-btn btn free-form">Card</div>
+       
+       <div class="next free-form btn">Next<i class="fa fa-angle-right"></i></div>
+        
+      </form>
+      
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>

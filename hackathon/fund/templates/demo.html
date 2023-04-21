@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+    <select name="dataset">
+        <option value="dataset1">dataset1</option>
+        <option value="dataset2">dataset2</option>
+        <option value="dataset3">dataset3</option>
+    </select>
+    <select name="model">
+        <option value="Dtrees">Dtrees</option>
+        <option value="Ann">Ann</option>
+        <option value="logistic">logistic regression</option>
+        <option value="svm">svm</option>
+    </select>
+    <button type="submit" name="set" value="set">submit</button>
+</form>
+</body>
+</html>
